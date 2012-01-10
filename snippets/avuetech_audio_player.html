@@ -4,10 +4,33 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Insert title here</title>
+
+<script type="text/javascript" src="/javascript/audio-player/audio-player.js"></script>
+<link href="http://www.federalnewsradio.com/css/styles.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="http://www.federalnewsradio.com/jqueryO/js/themes/base/jquery.ui.all.css" rel="stylesheet" />
+<link media="screen" rel="stylesheet" href="http://www.federalnewsradio.com/jqueryO/css/colorbox.css" />
+<link rel="stylesheet" type="text/css" href="http://www.federalnewsradio.com/css/stylesIE9.css" />
+
 </head>
+
 <body>
 
 <h1>Hello World!</h1>
+
+<div id="story_audio">
+	<h3><img src="http://www.federalnewsradio.com/images/icons/icon-listen.png" alt="speaker icon" /> Listen</h3>
+	<h5>Linda Rix, Co-CEO, AVUE Technologies</h5>
+	<div class="audio_box">
+	<p class="audio_desc"></p>
+	<p id="audio_embed_0" class="audio_player"></p>
+	<!-- <p class="audio_description">Linda Rix, Co-CEO, AVUE Technologies</p> -->
+	<p class="audio_download"><a href="http://icestream.dev-cms.com:8000/dc/fnr/fed_access/FED_ACCESS_11-04-2011.mp3" >Download</a></p>
+	<script type="text/javascript">
+		AudioPlayer.embed("audio_embed_0", {soundFile:"http://icestream.dev-cms.com:8000/dc/fnr/fed_access/FED_ACCESS_11-04-2011.mp3" , titles: "Linda Rix, Co-CEO, AVUE Technologies" });
+	</script>
+	<!-- Title: Linda Rix, Co-CEO, AVUE Technologies, Desc:  -->
+	</div>
+</div>
 
 
 </body>
