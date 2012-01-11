@@ -2,9 +2,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+
+  <link rel="stylesheet" href="/css/fonttest.css" media="screen" />
+
 <script type="text/javascript">
   WebFontConfig = {
-    google: { families: [ 'Tangerine', 'Irish Grover' ] }
+    custom: { families: [ 'Tangerine', 'Irish Grover' ], urls: [ 'http://mytest.dev/css/fonttest.css' ] }
   };
   (function() {
     var wf = document.createElement('script');
@@ -16,28 +19,6 @@
   })();
 </script>
 
-<style type="text/css">
-.wf-loading h1, .wf-loading h2 {
-  visibility: hidden;
-}
-.wf-inactive h1 {
-  font-family: serif;
-  font-size: 32px;
-}
-.wf-active h1 {
-  font-family: 'Irish Grover', serif;
-  font-size: 32px;
-}
-.wf-inactive h2 {
-  font-family: serif;
-  font-size: 24px;
-}
-.wf-active h2 {
-  font-family: 'Tangerine', serif;
-  font-size: 24px;
-}
-
-</style>
   </head>
 <body>
   <h1>This is using Irish Grover</h1>

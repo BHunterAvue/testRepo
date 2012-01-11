@@ -1,9 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Irish+Grover|Tangerine' rel='stylesheet' type='text/css'>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<title>Google Font Test</title>
+<title>Google Font Test - Web Font Loader</title>
 
 <script type="text/javascript">
 	WebFontConfig = {
@@ -20,20 +19,34 @@
 </script>
 
 <style type="text/css">
+.wf-loading h1, .wf-loading h2 {
+	visibility: hidden;
+}
+.wf-inactive h1 {
+	font-family: serif;
+	font-size: 32px;
+}
+.wf-active h1 {
+	font-family: 'Irish Grover', serif;
+	font-size: 32px;
+}
+.wf-inactive h2 {
+  font-family: serif;
+  font-size: 24px;
+}
+.wf-active h2 {
+  font-family: 'Tangerine', serif;
+  font-size: 24px;
+}
+
 body {background-color: #EEE;}
-h1 {font-family: "Irish Grover", cursive;}
-h2 {font-family: Tangerine, sans-serif;}
+/* h1 {font-family: "Irish Grover", serif;} */
+/* h2 {font-family: Tangerine, serif;} */
 </style>
 </head>
 <body>
-
-<?php
-  print "<h1>Hello World</h1><br />";
-  // TODO Adding a 'to-do' task to this file.
-?>
-
-<h2>Hello World!</h2>
-
+  <h1>This is using Irish Grover</h1>
+  <h2>This is using Tangerine!</h2>
 </body>
 </html>
 

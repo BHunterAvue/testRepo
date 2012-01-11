@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+@font-face {
+  font-family: "Irish Grover";
+  src: url(http://mytest.dev/fonts/IrishGrover.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Tangerine";
+  src: url(http://mytest.dev/fonts/Tangerine_Regular.ttf);
+  font-weight: 400;
+}
+
+body {background-color: #EEE;}
+
+.wf-loading h1, .wf-loading h2 {
+  visibility: hidden;
+}
+.wf-inactive h1 {
+  font-family: serif;
+  font-size: 32px;
+}
+.wf-active h1 {
+  color: #14785A;
+  font-family: 'Irish Grover', serif;
+  font-size: 32px;
+}
+.wf-inactive h2 {
+  font-family: serif;
+  font-size: 24px;
+}
+.wf-active h2 {
+  font-family: 'Tangerine', serif;
+  font-size: 24px;
+}
+
+
