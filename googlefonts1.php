@@ -27,7 +27,7 @@
 	font-family: serif
 }
 .wf-active p {
-	font-family: 'Tangerine', serif
+	font-family: 'Irish Grover', serif
 }
 .wf-loading p {
 	font-family: serif;
@@ -38,8 +38,16 @@
 	font-size: 16px
 }
 .wf-active h1 {
-	font-family: 'Cantarell', serif;
+	font-family: 'Irish Grover', serif;
 	font-size: 16px
+}
+.wf-inactive h2 {
+  font-family: serif;
+  font-size: 16px
+}
+.wf-active h2 {
+  font-family: 'Irish Grover', serif;
+  font-size: 16px
 }
 
 body {background-color: #EEE;}
